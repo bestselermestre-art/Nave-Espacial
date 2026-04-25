@@ -1,0 +1,14 @@
+def check_nave_status(self, temperatura_externa, integridade_casco):
+    """
+    Simula o diagnóstico do sistema da nave usando a lógica do escâner.
+    """
+    print("[*] Diagnosticando sistemas de proteção térmica...")
+    
+    # Se a nave entrar em uma atmosfera, a temperatura sobe muito
+    if temperatura_externa > 1500:
+        return "ALERTA: Escudo Térmico em nível crítico! Ativando dissipadores."
+    
+    if integridade_casco < 50:
+        return "PERIGO: Brecha detectada! Use o Escâner de Matéria para localizar o furo."
+        
+    return "Sistemas estáveis. Nave pronta para salto espacial."
