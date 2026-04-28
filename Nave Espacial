@@ -56,3 +56,26 @@ def modo_submarino(profundidade):
     
     print(f"[INFO] Operando a {profundidade}m. Pressão: {pressao_estimada} atm.")
     return ajuste_salinidade
+
+
+import time
+
+class SonarOceanico:
+    def __init__(self):
+        self.velocidade_som_agua = 1500  # Metros por segundo (media)
+        self.alcance_maximo = 5000       # 5 km
+        
+    def emitir_pulso(self):
+        print("[SONAR] Pulso acustico enviado...")
+        # Simula o tempo de ida e volta do som
+        return True
+
+    def calcular_distancia(self, tempo_retorno):
+        # Distancia = (Velocidade * Tempo) / 2 (ida e volta)
+        distancia = (self.velocidade_som_agua * tempo_retorno) / 2
+        return round(distancia, 2)
+
+    def mapear_obstaculo(self, intensidade_eco):
+        if intensidade_eco > 0.8:
+            return "Objeto Solido de Alta Densidade (Rocha/Metal)"
+        return "Sedimento Leve/Lodo"
