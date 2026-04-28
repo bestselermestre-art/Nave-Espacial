@@ -10,3 +10,5 @@ A navegação inercial do repositório Nave-Espacial seria usada para evitar col
 
 ## Detecção de Plumas Químicas: 
 O escâner identificaria vazamentos de petróleo ou concentrações de metano (como visto na sua lógica de análise de gases) antes mesmo da aproximação física.
+
+## Implementação Lógica: Sonar Module
