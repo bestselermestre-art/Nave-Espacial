@@ -12,3 +12,4 @@ A navegação inercial do repositório Nave-Espacial seria usada para evitar col
 O escâner identificaria vazamentos de petróleo ou concentrações de metano (como visto na sua lógica de análise de gases) antes mesmo da aproximação física.
 
 ## Implementação Lógica: Sonar Module
+Este módulo utilizaria a energia estável do FusionCore para emitir pulsos acústicos e calcular a distância baseada no tempo de retorno (eco).
