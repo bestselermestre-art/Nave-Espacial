@@ -4,5 +4,9 @@ Se algo atingir a nave, o escâner identifica o material do impacto e o dano cau
 ## Com os três pilares — Energia (FusionCore), Sensor (ATM) e Movimento (Nave-Espacial)
 
 ## Código para tratar a Pressão Hidrostática.
+
 ## Mapeamento de Relevo (Batimétrica):
 A navegação inercial do repositório Nave-Espacial seria usada para evitar colisões em fossas abissais onde o mapeamento é inexistente.
+
+## Detecção de Plumas Químicas: 
+O escâner identificaria vazamentos de petróleo ou concentrações de metano (como visto na sua lógica de análise de gases) antes mesmo da aproximação física.
