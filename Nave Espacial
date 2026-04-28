@@ -43,3 +43,16 @@ class NaveGador:
 unidade_01 = NaveGador()
 unidade_01.mover("norte", 3)
 unidade_01.estabilizar_altitude(15.0)
+
+
+
+# Extensão para ambiente oceânico
+def modo_submarino(profundidade):
+    # A cada 10 metros, a pressão aumenta ~1 atm
+    pressao_estimada = profundidade / 10
+    
+    # Ajusta a sensibilidade do sensor de indução para água salgada (alta condutividade)
+    ajuste_salinidade = 0.85 
+    
+    print(f"[INFO] Operando a {profundidade}m. Pressão: {pressao_estimada} atm.")
+    return ajuste_salinidade
