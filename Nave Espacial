@@ -12,3 +12,34 @@ def check_nave_status(self, temperatura_externa, integridade_casco):
         return "PERIGO: Brecha detectada! Use o Escâner de Matéria para localizar o furo."
         
     return "Sistemas estáveis. Nave pronta para salto espacial."
+
+import time
+
+class NaveGador:
+    def __init__(self):
+        self.posicao_x = 0.0  # Coordenadas em metros
+        self.posicao_y = 0.0
+        self.altitude = 100.0 # Altitude inicial em metros
+        self.velocidade = 5.0 # Metros por segundo
+
+    def mover(self, direcao, duracao):
+        print(f"\n[*] Iniciando propulsao: Direcao {direcao}")
+        # Simula o consumo de energia do FusionCore durante o voo
+        for segundo in range(duracao):
+            time.sleep(0.5) # Simula o tempo passando
+            if direcao.lower() == "norte":
+                self.posicao_y += self.velocidade
+            elif direcao.lower() == "sul":
+                self.posicao_y -= self.velocidade
+            
+            print(f"Deslocando... Posicao atual: (X: {self.posicao_x}, Y: {self.posicao_y})")
+
+    def estabilizar_altitude(self, alvo):
+        print(f"\n[*] Ajustando altitude para {alvo}m para escaneamento ATM...")
+        self.altitude = alvo
+        print(f"Altitude estabilizada. Sensores ATM prontos para emissao.")
+
+# --- Integracao de Sistemas ---
+unidade_01 = NaveGador()
+unidade_01.mover("norte", 3)
+unidade_01.estabilizar_altitude(15.0)
